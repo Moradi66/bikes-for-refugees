@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body {
 	font-family: "Source Sans Pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 	padding-right: 15%;
@@ -21,18 +20,17 @@ header {
 	visibility: hidden;
   }
 .navbar-div {
-	width: 70%;
+	width: 100%;
 }
 .navbar-ul {
-	width: 50%;
+	width: 100%;
 	display: flex;
 	height: 42px;
 	list-style-type: none;
+	padding-left: 5px;
 }
 li a{
 	float: left;
-	text-align: center;
-	align-items: center;
 	color: #000000;
 	display: block;
 	padding: 10px 10px;
@@ -43,8 +41,8 @@ li a{
 .navbar-li a:hover {
 	border-style: solid;
 	border-color: #ce5f31;
-	border-width: 1px;
-	border-radius: 5%;
+	border-width: 2px;
+	border-radius: 3%;
 	font-weight: bold;
 }
 .btn {
@@ -63,6 +61,9 @@ li a{
 	margin-left: 8px;
 	text-decoration: none;
 	padding: 10px 20px;
+}
+.drop-btn-span{
+	display: none;
 }
 .section-alert {
 	width: 100%;
@@ -116,6 +117,7 @@ h1 {
 	float: left;
 	background: #ce5f31;
 	border-color: #ce5f31;
+	background: -webkit-linear-gradient(left, rgb(255, 0, 0), rgb(0, 4, 255));
 	color: white;
 	text-decoration: none;
 	padding: 10px 25px;
@@ -230,14 +232,16 @@ a{
 		padding: 0px;
 	}
 	.drop-btn {
-		background-color: #ce5f31;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
 		cursor: pointer;
 		float: right;
-		border-radius:0.15em;
 		visibility: visible;
+		font-size: 20px;
+		background: url(../images/bike.jpeg);
+		background-position: center;
+		background-size: cover;
+	}
+	.drop-btn-span{
+		display: block;
 	}
 	.navbar-div {
 		width: 100%;
@@ -255,7 +259,9 @@ a{
 		padding: 0px;
 		margin: none;
 		height:230px ;
-		background-color: #ffffff;
+		background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.39)), url(../images/bike.jpeg);
+		background-position: center;
+		background-size: cover;
 	 }
 	 .navbar-ul a {
 		color: black;
@@ -265,9 +271,7 @@ a{
 		width: 90%;
 	 }
  
-	 .navbar-ul a:hover {
-		 background-color: #f1f1f1
-	}
+	
 	.navbar-div:hover .navbar-ul {
 		display: block;
 	 }
@@ -303,306 +307,3 @@ a{
 	}
 	
 }
-=======
-body {
-	font-family: "Source Sans Pro", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	padding-right: 15%;
-	padding-left: 10%;
-	
-}
-header {
-	align-items: center;
-	display: flex;
-	flex-direction: row;
-	height: 100px;
-	position: relative;
-	
-}
-.img-header {
-	float: left;
-	max-height: 70px;
-}
-.drop-btn{
-	visibility: hidden;
-  }
-.navbar-div {
-	width: 70%;
-}
-.navbar-ul {
-	width: 50%;
-	display: flex;
-	height: 42px;
-	list-style-type: none;
-}
-li a{
-	float: left;
-	text-align: center;
-	align-items: center;
-	color: #000000;
-	display: block;
-	padding: 10px 10px;
-	text-decoration: none;
-	white-space: nowrap;
-	font-weight: bold;
-}
-.navbar-li a:hover {
-	border-style: solid;
-	border-color: #ce5f31;
-	border-width: 1px;
-	border-radius: 5%;
-	font-weight: bold;
-}
-.btn {
-	font-size: 14px;
-	align-items: center;
-	white-space: nowrap;
-	border: 1px solid transparent;
-	border-radius: .25rem;
-	
-}
-.btn-header {
-	float: right;
-	background: #ce5f31;
-	border-color: #ce5f31;
-	color: white;
-	margin-left: 8px;
-	text-decoration: none;
-	padding: 10px 20px;
-}
-.section-alert {
-	width: 100%;
-	border-style: solid;
-	border-color:#cac6c6;
-	border-left-color: #ce5f31;
-	border-width: 0.1px 0.1px 0.1px 3px;
-	line-height: 50px;
-	margin-bottom: 40px;
-	margin-top: 28px;
-	position: relative;
-}
-section {
-	width: 100%;
-	display: flex;
-}
-.mainbar {
-	width: 60%;
-	display: flex;
-	flex-wrap: wrap;
-}
-.primary-content {
-	width: 100%;
-	position: relative;
-	height: 300px;
-	margin-top: 28px;
-	background: linear-gradient(rgba(0, 0, 0, 0.26), rgba(0, 0, 0, 0.39)), url(../images/header-bike.jpg);
-	background-position: center;
-	background-size: cover;
-	padding-bottom: 2em;
-	color: #fff;
-	border-radius: 0;
-}
-.content{
-	padding: 20px;
-}
-h1 {
-	font-size: 50px;
-	font-family: Serif;
-	box-sizing: border-box;
-	font-weight: 300;
-	height: 79px;
-	margin-bottom: 10px;
-}
-.my-4 {
-	border-style: solid;
-	border-color: #ffffff;
-	border-width: 0.5px;
-}
-.btn-primary {
-	float: left;
-	background: #ce5f31;
-	border-color: #ce5f31;
-	color: white;
-	text-decoration: none;
-	padding: 10px 25px;
-}
-.btn-secondary {
-	float: left;
-	background: #ffffff;
-	border-color: #ffffff;
-	color: rgb(0, 0, 0);
-	text-decoration: none;
-	padding: 10px 15px;
-	margin-left: 3px;
-}
-.heading-underline {
-	width: 100%;
-	border-bottom-color: rgb(220, 205, 198);
-	border-bottom-style: solid;
-	border-bottom-width: 1px;
-	font-size: 16px;
-	line-height: 17.6px;
-	margin-bottom: 32px;
-	margin-top: 48px;
-	padding-bottom: 8px;
-}
-.articles {
-	width: 100%;
-	float: left;
-	display: flex;
-	flex-direction: row;
-	position: relative;
-}
-.article {
-	width: 50%;
-	border-style: solid;
-	border-color: #c9b7b0;
-	border-width: 1px;
-	padding: 13px;
-	margin: 5px;
-	white-space: normal;
-}
-.article1 {
-	background-color: #e0d9d6;
-}
-.article-title {
-	font-size: 20px;
-	font-weight: bold;
-}
-.text-center {
-	width: 100%;
-	border-top-color: #c9b7b0;
-	border-top-style: solid;
-	border-top-width: 1px;
-	font-size: 16px;
-	position: relative;
-	margin: 60px 0 60px 0;
-	text-align: center;
-}
-aside {
-	width: 40%;
-	margin-left: 15px;
-}
-.articles-asid {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-}
-.img-fluid {
-	width: 120px;
-}
-.article-asid {
-	display: flex;
-}
-.article-title {
-	margin-left: 15px;
-	font-size: 14px;
-}
-a{
-	text-decoration: none;	
-}
-@media screen and (max-width: 1400px) { 
-	body{
-		padding-left: 100px;
-		padding-right: 100px; 
-	}
-	
-   
- }
-@media screen and (max-width: 1000px) { 
-	body{
-		padding-left: 50px;
-		padding-right: 50px; 
-	}
-	h1{
-		font-size: 40px;
-	}
-   
-}
-
-@media screen and (max-width: 800px) { 
-	body {
-		padding-right:10px;
-		padding-left: 10px;
-	}
-	header{
-		width: 100%;
-	}
-	.btn-header {
-		float: left;
-		margin-left: 0px;
-		text-decoration: none;
-		padding: 0px;
-	}
-	.drop-btn {
-		background-color: #ce5f31;
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-		float: right;
-		border-radius:0.15em;
-		visibility: visible;
-	}
-	.navbar-div {
-		position: relative;
-		display: block;
-	 }
-
-	 .navbar-ul {
-		display: none;
-		position: absolute;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-		padding: 0px;
-		margin: none;
-		height:250px ;
-		background-color: #ffffff; 
-	 }
-	 .navbar-ul a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		float: left;
-	 }
- 
-	 .navbar-ul a:hover {
-		 background-color: #f1f1f1
-	}
-	.navbar-div:hover .navbar-ul {
-		display: block;
-	 }
-
-	 .navbar-brand > img {
-	   max-height: 80px;
-	}
-
-	section{
-		display: block;
-		width: 100%;
-	}
-
-	.mainbar {
-		width: 100%;
-	
-	}
-	.primary-content {
-		width: 100%;
-		display: block;
-	}
-	.section-alert{
-		font-size: 14px;
-	}
-	h1{
-		font-size: 30px;
-	}
-	aside{
-		width: 100%;
-	}
-	.sidebar{
-		width: 100%;
-	}
-	
-}
->>>>>>> 513e0efaac5580a060667a85f953ec19b2844350
